@@ -10,4 +10,5 @@ api.post('/login', login)
 api.put('/update/:id', update)
 api.delete('/delete/:id', deleteU)
 
+
 export default api

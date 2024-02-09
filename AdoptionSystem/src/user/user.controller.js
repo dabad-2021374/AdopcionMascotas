@@ -74,8 +74,7 @@ export const updatePassword = async (req, res) => {
         return res.status(500).send({ message: 'Error updating password' });
     }
 }
-
-*/
+\*/
 
 export const update = async (req, res) => { //Datos generales (No password)
     try {

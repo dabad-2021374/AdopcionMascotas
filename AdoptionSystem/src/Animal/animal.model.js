@@ -1,4 +1,4 @@
-import mongoose from "mongoose"
+import mongoose, { mongo } from "mongoose"
 
 const userSchema = mongoose.Schema({
     typeAnimal: {
@@ -14,7 +14,8 @@ const userSchema = mongoose.Schema({
         required: false
     },
     keeper: {
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
         required: true
     },
     phone: {
